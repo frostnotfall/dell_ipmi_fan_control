@@ -47,7 +47,7 @@ if [ "$HAS_SYSTEMD" == true ]; then
 
     if [ ! -f $SERVICE_PATH ]; then
         FIRST_RUN=true
-        cat>$SERVICE_PATH&lt;&lt;EOF
+        cat>$SERVICE_PATH<<EOF
 [Unit]
 Description= dell fan control with ipmi
 After=network.target
